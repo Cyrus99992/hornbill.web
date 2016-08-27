@@ -1,0 +1,29 @@
+/*	
+*	################################################################################
+*	
+*	My Custom Style for KINGADMIN
+*	---------------------------------------------------------------------
+*
+*	Version		1.0
+*	Author		Cyrus.Salamander
+*	
+*	Override theme style or create your new styles. Direct change to main.css
+*	is not recommended to avoid problems when theme updates arrived in the future
+*	
+*	################################################################################
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑, sans-serif;
+  font-size: 13px;
+  color: #555;
+  background: #ececec;
+}
+
+h1, h2 {
+  font-family: "latolight", "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑, sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑, sans-serif;
+}

@@ -1,30 +1,273 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hornbill WebUI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="stylesheet" type="text/css" href="Content/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="Content/Site.css">
+<link rel="stylesheet" type="text/css" href="Content/custom-styles.css">
 </head>
 
-<body class="fixed-top-active dashboard">
+<body class="sidebar-fixed topnav-fixed dashboard">
 <!-- WRAPPER -->
 <div id="wrapper" class="wrapper">
-	<!-- TOP NAV BAR -->	
-	<nav class="top-bar navbar-fixed-top">
+	<!-- TOP NAV BAR -->
+	<div class="top-bar navbar-fixed-top">
 		<div class="container">
 			<div class="clearfix">
-				<a href="#" class="pull-left toggle-sidebar-collapse"><i class="glyphicon glyphicon-home"></i></a>
+				<a href="#" class="pull-left toggle-sidebar-collapse"><i class="fa fa-bars"></i></a>
+				<!-- logo -->
+				<div class="pull-left left logo">
+					<a href="index.html">Hornbill WebApp</a>
+					<h1 class="sr-only">Hornbill Admin Dashboard</h1>
+				</div>
+				<!-- end logo -->
+				<div class="pull-right right">
+					<!-- top-bar-right -->
+					<div class="top-bar-right">
+						<div class="notifications">
+							<ul>
+								<!-- notification: inbox -->
+								<li class="notification-item inbox">
+									<div class="btn-group">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-envelope"></i><span class="count">6</span><span class="circle"></span>
+										</a>
+										<ul class="dropdown-menu" role="menu">
+											<li class="notification-header">
+												<strong>您有6条用户消息尚未阅读...</strong>
+											</li>
+											<!-- inbox items -->
+											<li class="inbox-item clearfix">
+												<a href="#">
+													<div class="media">
+														<div class="media-left">
+															<img class="media-object" src="Images/A01.png" alt="Antonio">
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading name">罗杰·杜德勒</h5>
+															<p class="text">你可以计划改动（把它们添加到缓存区） ...</p>
+															<span class="timestamp">9 minutes ago</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											<!-- inbox items -->
+											<li class="inbox-item clearfix">
+												<a href="#">
+													<div class="media">
+														<div class="media-left">
+															<img class="media-object" src="Images/A02.png" alt="Antonio">
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading name">汤姆·克兰西</h5>
+															<p class="text">GTD是一套持续的系统，需要不断地实践 ...</p>
+															<span class="timestamp">20 minutes ago</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											<!-- inbox items -->
+											<li class="inbox-item clearfix">
+												<a href="#">
+													<div class="media">
+														<div class="media-left">
+															<img class="media-object" src="Images/A03.png" alt="Antonio">
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading name">JACK</h5>
+															<p class="text">经过重新编排校对后的的中文翻译版下载 ...</p>
+															<span class="timestamp">3 days ago</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											<!-- inbox footer -->
+											<li class="notification-footer">
+												<a href="#">查看所有消息</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<!-- end notification: inbox -->
+								<!-- notification: general -->
+								<li class="notification-item general">
+									<div class="btn-group">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-bell"></i><span class="count">8</span><span class="circle"></span>
+										</a>
+										<ul class="dropdown-menu" role="menu">
+											<li class="notification-header"><strong>您有8条系统通知尚未阅读</strong></li>
+											<li>
+												<a href="#">
+													<i class="fa fa-comment green-font"></i>
+													<span class="text">新的系统消息</span>
+													<span class="timestamp">1 minute ago</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-warning red-font"></i>
+													<span class="text red-font">新的系统警告!</span>
+													<span class="timestamp">5 hours ago</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-tasks yellow-font"></i>
+													<span class="text yellow-font">新的系统提醒!</span>
+													<span class="timestamp">Oct 11</span>
+												</a>
+											</li>
+											<li class="notification-footer"><a href="#">查看所有的系统消息</a></li>
+										</ul>
+									</div>
+								</li>
+								<!-- end notification: general -->
+							</ul>
+						</div>
+						<!-- logged user and the menu -->
+						<div class="logged-user">
+							<div class="btn-group">
+								<a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<img src="Images/user-avatar.png" alt="User Avatar">
+									<span class="name">Stacy Rose</span> <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">
+											<i class="fa fa-user"></i>
+											<span class="text">用户资料</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-cog"></i>
+											<span class="text">用户设定</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-power-off"></i>
+											<span class="text">登出系统</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- end logged user and the menu -->
+					</div>
+					<!-- end top-bar-right -->
+				</div>
 			</div>
 		</div>
-	</nav>
+	</div>
+	<!-- END TOP NAV BAR -->
+	<!-- LEFT SIDEBAR -->
+	<div id="left-sidebar" class="left-sidebar">
+
+			<div class="sidebar-scroll">
+				<nav class="main-nav">
+					<ul class="main-menu">
+						<li class="active">
+							<a href="#" class="js-sub-menu-toggle">
+								<i class="fa fa-dashboard fa-fw"></i><span class="text">Dashboard</span><i class="toggle-icon fa fa-angle-down"></i>
+							</a>
+							<ul class="sub-menu open">
+								<li class="active"><a href="index.html"><span class="text">Dashboard v1</span></a></li>
+								<li><a href="index-transparent.html"><span class="text">Dashboard v1 Transp.</span></a></li>
+								<li><a href="index-dashboard-v2.html"><span class="text">Dashboard v2</span></a></li>
+								<li><a href="index-dashboard-v2-transparent.html"><span class="text">Dashboard v2 Trans.</span></a></li>
+								<li><a href="index-dashboard-v3.html"><span class="text">Dashboard v3</span></a></li>
+								<li><a href="index-dashboard-v4.html"><span class="text">Dashboard v4 <span class="badge element-bg-color-blue">New</span></span></a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-sub-menu-toggle"><i class="fa fa-navicon"></i><span class="text">Navigations <span class="badge element-bg-color-blue">New</span></span>
+							<i class="toggle-icon fa fa-angle-left"></i></a>
+							<ul class="sub-menu ">
+								<li><a href="nav-default-fixed.html"><span class="text">Default Fixed Sidebar</span></a></li>
+								<li><a href="nav-normal.html"><span class="text">Normal Sidebar</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-sub-menu-toggle"><i class="fa fa-columns"></i><span class="text">Layouts <span class="badge element-bg-color-blue">New</span></span>
+							<i class="toggle-icon fa fa-angle-left"></i></a>
+							<ul class="sub-menu ">
+								<li><a href="layout-collapsed.html"><span class="text">Collapsed Sidebar</span></a></li>
+								<li><a href="layout-minified.html"><span class="text">Minified Sidebar</span></a></li>
+								<li><a href="layout-ontop-navigation.html"><span class="text">On-Top Navigation</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-sub-menu-toggle"><i class="fa fa-file"></i><span class="text">File Manager</span>
+							<i class="toggle-icon fa fa-angle-left"></i></a>
+							<ul class="sub-menu ">
+								<li><a href="page-file-manager.html"><span class="text">Default</span></a></li>
+								<li><a href="page-file-manager-transparent.html"><span class="text">Transparent</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+	</div>
+	<!-- END LEFT SIDEBAR -->
+	<!-- MAIN CONTENT WRAPPER -->
+	<div id="main-content-wrapper" class="content-wrapper ">
+		<!-- top general alert -->
+		<div class="alert alert-danger top-general-alert">
+			<span>If you <strong>can't see the logo</strong> on the top left, please reset the style on right style switcher (for upgraded theme only).</span>
+			<button type="button" class="close">&times;</button>
+		</div>
+		<!-- end top general alert -->
+		<!-- top general nav -->
+		<div class="row">
+			<div class="col-md-4 ">
+				<ul class="breadcrumb">
+					<li><i class="fa fa-home"></i><a href="#">Home</a></li>
+					<li class="active">Dashboard</li>
+				</ul>
+			</div>
+			<div class="col-md-8 ">
+					<div class="top-content">
+						<ul class="list-inline mini-stat">
+							<li>
+								<h5>LIKES <span class="stat-value stat-color-orange"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
+							</li>
+							<li>
+								<h5>SUBSCRIBERS <span class="stat-value stat-color-blue"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
+							</li>
+							<li>
+								<h5>CUSTOMERS <span class="stat-value stat-color-seagreen"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<!-- end top general nav -->
+		<!-- main content -->
+		<div class="content">
+			<div class="main-header">
+				<h2>首页</h2>
+				<em>系统主页</em>
+			</div>
+		</div>
+		<!-- end main content -->
+		<!-- FOOTER -->
+		<footer class="footer">&copy; 2016 The Hornbill Web Application</footer>
+		<!-- END FOOTER -->
+	</div>
+	<!-- END MAIN CONTENT WRAPPER -->
 </div>
 <!-- END WRAPPER -->
 
 <!-- Javascript -->
-<script src="Scripts/jquery-2.1.0.min.js"></script>
+<script src="Scripts/jquery-3.1.0.min.js"></script>
 <script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/modernizr-2.8.3.js"></script>
+<script src="Scripts/bootstrap-tour/bootstrap-tour.custom.js"></script>
+<script src="Scripts/jquery.slimscroll.min.js"></script>
 <script src="Scripts/uicommon.js"></script>
 </body>
 </html>
